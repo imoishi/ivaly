@@ -14,24 +14,24 @@
      <div class="big-header">
        <a href=""><img src="./images/ivaly.png" alt=""></a>
        <div class="searchbar">
-         <input type="search" placeholder="Search for..." class="search">
+         <input type="search" placeholder="Search for..." class="search-input">
          <button type="submit" class="search-icon"><i class="fas fa-search  icon-bar"></i></button>
        </div>
        <div class="icon-item">
          <div class="item">
-           <a href="" class="icons"><i class="fas fa-shopping-cart fa-2x"></i></a>
+           <a href="" class="icons"><i class="fas fa-shopping-cart "></i></a>
          </div>
          <span class="separate">|</span>
          <div class="item">
-          <a href="" class="icons"><i class="fas fa-bell fa-2x"></i></a>
+          <a href="" class="icons"><i class="fas fa-bell"></i></a>
         </div>
         <span class="separate">|</span>
         <div class="item">
-          <a href="" class="icons"><i class="fas fa-comment-dots fa-2x"></i></a>
+          <a href="" class="icons"><i class="fas fa-comment-dots "></i></a>
         </div>
         <span class="separate">|</span>
         <div class="item">
-          <a href="" class="icons"><i class="fas fa-user fa-2x"></i></a>
+          <a href="" class="icons"><i class="fas fa-user "></i></a>
         </div>
        </div>
      </div>
@@ -42,8 +42,14 @@
  <div id="main-nav">
    <div class="container">
     <div class="navber">
-      <div class="bar-icon">
-        <a href=""><i class="fas fa-bars fa-2x"></i></a>
+      <div id="main-box" onclick="openFunction()">&#9776;</div>
+      <div id="menu" class="side-menu">
+        <!-- <a href=""><i class="fas fa-bars"></i></a> -->
+        <ul>
+          <li><a href="">Shops</a></li>
+          <li><a href="">Gift Card</a></li>
+          <li><a href="" class="close-btn" onclick="closeFuntion()">&times;</a></li>
+          </ul>
       </div>
       <div class="nav-item-1">
         <ul>
@@ -63,5 +69,10 @@
     </div>
    </div>
  </div>
+
+
+
+ <script src="js/jquery-3.4.1.js"></script>
+ <script src="js/main.js"></script>
 </body>
 </html>

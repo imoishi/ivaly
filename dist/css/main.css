@@ -28,26 +28,35 @@ ul {
     padding: 0.5rem;
     align-items: center; }
     #header-home .big-header a img {
-      align-items: center;
-      text-align: center; }
+      text-align: left;
+      height: 40px; }
     #header-home .big-header .searchbar {
       align-items: center;
-      text-align: left; }
-      #header-home .big-header .searchbar .search {
+      text-align: left;
+      margin-left: 1rem; }
+      #header-home .big-header .searchbar .search-input {
         width: 85%;
         padding: 0 17px;
-        height: 2.7rem;
+        height: 2.5rem;
         border: 2px #c3232a solid;
         border-radius: 5px 0 0 5px; }
+        #header-home .big-header .searchbar .search-input::placeholder {
+          color: #d0d3d6; }
+        #header-home .big-header .searchbar .search-input:focus {
+          outline: none;
+          border: 2px solid #c3232a; }
       #header-home .big-header .searchbar .search-icon {
         background: #c3232a;
-        height: 2.7rem;
+        height: 2.5rem;
         padding: 0 29px;
         border: 2px #c3232a solid;
         border-radius: 0 5px 5px 0;
-        margin-left: -5px;
+        margin-left: -6px;
         color: #fff;
         cursor: pointer; }
+        #header-home .big-header .searchbar .search-icon:focus {
+          outline: none;
+          border: 2px solid #c3232a; }
         #header-home .big-header .searchbar .search-icon .icon-bar {
           size: 1rem; }
     #header-home .big-header .icon-item {
@@ -60,11 +69,12 @@ ul {
         #header-home .big-header .icon-item .item .icons {
           border: none;
           background: #fff;
-          color: #525458;
-          cursor: pointer; }
+          color: #85878b;
+          cursor: pointer;
+          font-size: 1.5rem; }
       #header-home .big-header .icon-item .separate {
-        padding: 0.75rem 0.3rem;
-        color: #525458; }
+        padding: 1.1rem 0.4rem;
+        color: #e6e8eb; }
 
 #main-nav {
   background: #fff; }
@@ -73,24 +83,57 @@ ul {
     grid-template-columns: 1fr 6fr 4fr;
     align-items: center;
     border-left: 1px #e6e8eb solid; }
-    #main-nav .navber .bar-icon {
-      text-align: center;
-      align-items: center;
-      margin: 1px 15px; }
+    #main-nav .navber #main-box {
+      font-size: 24px;
+      cursor: pointer; }
+    #main-nav .navber .side-menu {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 0px;
+      background: #222;
+      z-index: 1;
+      padding-top: 100px;
+      overflow-x: hidden; }
+      #main-nav .navber .side-menu a {
+        padding: 8px 8px 8px 64px;
+        font-size: 20px;
+        color: #999;
+        display: block; }
+      #main-nav .navber .side-menu .close-btn {
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 32px; }
     #main-nav .navber .nav-item-1 {
       border-left: 1px #e6e8eb solid; }
       #main-nav .navber .nav-item-1 ul {
         display: flex;
         justify-self: left; }
+        #main-nav .navber .nav-item-1 ul :first-child {
+          margin-left: 1rem; }
         #main-nav .navber .nav-item-1 ul li {
-          padding: 0.75rem 2rem;
-          margin-left: 0.5rem; }
+          padding: 0.75rem 1.3rem; }
+          #main-nav .navber .nav-item-1 ul li a {
+            color: #5a6577;
+            font-size: 0.95rem; }
+            #main-nav .navber .nav-item-1 ul li a:hover {
+              color: #d0d3d6; }
     #main-nav .navber .nav-item-2 {
       border-left: 1px #e6e8eb solid; }
       #main-nav .navber .nav-item-2 ul {
         display: flex;
         justify-self: end; }
+        #main-nav .navber .nav-item-2 ul :first-child {
+          margin-left: 1rem; }
         #main-nav .navber .nav-item-2 ul li {
-          padding: 0.75rem 2rem; }
+          padding: 0.75rem 1.4rem; }
+          #main-nav .navber .nav-item-2 ul li a {
+            color: #5a6577;
+            font-size: 0.95rem; }
+            #main-nav .navber .nav-item-2 ul li a:hover {
+              color: #d0d3d6; }
 
 /*# sourceMappingURL=main.css.map */
