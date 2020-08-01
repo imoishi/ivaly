@@ -1,0 +1,96 @@
+.container {
+  max-width: 1220px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Nunito Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', arial ,'Noto Sans', sans-serif;
+  line-height: 1.6;
+  background: #f5f6f7; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+#header-home {
+  background: #fff;
+  border-bottom: 1px #e6e8eb solid; }
+  #header-home .big-header {
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    padding: 0.5rem;
+    align-items: center; }
+    #header-home .big-header a img {
+      align-items: center;
+      text-align: center; }
+    #header-home .big-header .searchbar {
+      align-items: center;
+      text-align: left; }
+      #header-home .big-header .searchbar .search {
+        width: 85%;
+        padding: 0 17px;
+        height: 2.7rem;
+        border: 2px #c3232a solid;
+        border-radius: 5px 0 0 5px; }
+      #header-home .big-header .searchbar .search-icon {
+        background: #c3232a;
+        height: 2.7rem;
+        padding: 0 29px;
+        border: 2px #c3232a solid;
+        border-radius: 0 5px 5px 0;
+        margin-left: -5px;
+        color: #fff;
+        cursor: pointer; }
+        #header-home .big-header .searchbar .search-icon .icon-bar {
+          size: 1rem; }
+    #header-home .big-header .icon-item {
+      display: flex;
+      justify-self: end; }
+      #header-home .big-header .icon-item .item {
+        padding: 0.75rem;
+        border: none;
+        align-items: center; }
+        #header-home .big-header .icon-item .item .icons {
+          border: none;
+          background: #fff;
+          color: #525458;
+          cursor: pointer; }
+      #header-home .big-header .icon-item .separate {
+        padding: 0.75rem 0.3rem;
+        color: #525458; }
+
+#main-nav {
+  background: #fff; }
+  #main-nav .navber {
+    display: grid;
+    grid-template-columns: 1fr 6fr 4fr;
+    align-items: center;
+    border-left: 1px #e6e8eb solid; }
+    #main-nav .navber .bar-icon {
+      text-align: center;
+      align-items: center;
+      margin: 1px 15px; }
+    #main-nav .navber .nav-item-1 {
+      border-left: 1px #e6e8eb solid; }
+      #main-nav .navber .nav-item-1 ul {
+        display: flex;
+        justify-self: left; }
+        #main-nav .navber .nav-item-1 ul li {
+          padding: 0.75rem 2rem;
+          margin-left: 0.5rem; }
+    #main-nav .navber .nav-item-2 {
+      border-left: 1px #e6e8eb solid; }
+      #main-nav .navber .nav-item-2 ul {
+        display: flex;
+        justify-self: end; }
+        #main-nav .navber .nav-item-2 ul li {
+          padding: 0.75rem 2rem; }
+
+/*# sourceMappingURL=main.css.map */
