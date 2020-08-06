@@ -1,9 +1,18 @@
 
-// Sidebar
+// Slick
+$('.slider').slick({
+  slidesToShow: 1,
+  dots:true,
+  arrows:false,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 6000,
+});
 
+// Sidebar
 function openFunction(){
   console.log('paici oishi');
-  document.getElementById("menu").style.width="305px";
+  document.getElementById("menu").style.width="320px";
   // document.getElementById("main-box").style.marginLeft="300px";
 }
 function closeFuntion(){
@@ -26,3 +35,12 @@ function closeFuntion(){
 //   $('.sideberbtn').toggleClass('.close-btn');
 //   $('.sideberbtn').toggleClass('.side-menu');
 // });
+
+
+// Jqury Tabs
+$('.tab').on('click', function(evt) {
+  evt.preventDefault();
+  $(this).toggleClass('active');
+  var sel = this.getAttribute('data-toggle-target');
+  $('.tab-content').removeClass('active').filter(sel).addClass('active');
+});

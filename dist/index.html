@@ -1,78 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I-valy Limited | Online Shopping</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
- <header id="header-home">
-   <div class="container">
-     <div class="big-header">
-       <a href=""><img src="./images/ivaly.png" alt=""></a>
-       <div class="searchbar">
-         <input type="search" placeholder="Search for..." class="search-input">
-         <button type="submit" class="search-icon"><i class="fas fa-search  icon-bar"></i></button>
-       </div>
-       <div class="icon-item">
-         <div class="item">
-           <a href="" class="icons"><i class="fas fa-shopping-cart "></i></a>
-         </div>
-         <span class="separate">|</span>
-         <div class="item">
-          <a href="" class="icons"><i class="fas fa-bell"></i></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-valy Limited | Online Shopping</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Slick css -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"> -->
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header-home">
+      <div class="container">
+        <div class="big-header">
+          <a href=""><img src="./images/ivaly.png" alt="" /></a>
+          <div class="searchbar">
+            <input
+              type="search"
+              placeholder="Search for..."
+              class="search-input"
+            />
+            <button type="submit" class="search-icon">
+              <i class="fas fa-search icon-bar"></i>
+            </button>
+          </div>
+          <div class="icon-item">
+            <div class="item">
+              <a href="" class="icons"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <span class="separate">|</span>
+            <div class="item">
+              <a href="" class="icons"><i class="fas fa-bell"></i></a>
+            </div>
+            <span class="separate">|</span>
+            <div class="item">
+              <a href="" class="icons"><i class="fas fa-comment-dots"></i></a>
+            </div>
+            <span class="separate">|</span>
+            <div class="item">
+              <a href="" class="icons"><i class="fas fa-user"></i></a>
+            </div>
+          </div>
         </div>
-        <span class="separate">|</span>
-        <div class="item">
-          <a href="" class="icons"><i class="fas fa-comment-dots "></i></a>
-        </div>
-        <span class="separate">|</span>
-        <div class="item">
-          <a href="" class="icons"><i class="fas fa-user "></i></a>
-        </div>
-       </div>
-     </div>
-   </div>
- </header>
- 
+      </div>
+    </header>
 
- <div id="main-nav">
-   <div class="container">
-    <div class="navber">
-      <div id="main-box" onclick="openFunction()">&#9776;</div>
-      <div id="menu" class="side-menu">
-        <!-- <a href=""><i class="fas fa-bars"></i></a> -->
-        <ul>
-          <li><a href="">Shops</a></li>
-          <li><a href="">Gift Card</a></li>
-          <li><a href="" class="close-btn" onclick="closeFuntion()">&times;</a></li>
-          </ul>
-      </div>
-      <div class="nav-item-1">
-        <ul>
-          <li><a href="">All Shops</a></li>
-          <li><a href="">Gift Card</a></li>
-          <li><a href="">Campaign</a></li>
-          <li><a href="">Ivaly Express</a></li>
-        </ul>
-      </div>
-      <div class="nav-item-2">
-        <ul>
-          <li><a href="">News Feed</a></li>
-          <li><a href="">Mercent Zone</a></li>
-          <li><a href="">Help</a></li>
-        </ul>
+    <div id="main-nav">
+      <div class="container">
+        <div class="navber">
+          <div id="main-box" onclick="openFunction()">&#9776;</div>
+          <div id="menu" class="side-menu">
+            <img class="logo-img" src="./images/ivaly.png" alt="logo" />
+            <!-- <a href=""><i class="fas fa-bars"></i></a> -->
+            <div class="balance">
+              <div class="border-all">
+                <div class="balance-box">
+                  <p>Balance</p>
+                </div>
+                <div class="log-in">
+                  <a href=""
+                    ><button type="button" class="login-btn">Login</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <a href="">
+                  <span class="icon-space"
+                    ><i class="fas fa-shopping-bag"></i
+                  ></span>
+                  Shops
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"
+                    ><i class="fas fa-shopping-bag"></i
+                  ></span>
+                  Ivaly Express Shops
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"
+                    ><i class="fas fa-newspaper"></i
+                  ></span>
+                  News Feed
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"><i class="fas fa-gift"></i></span>
+                  Giftcard
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"><i class="fas fa-gifts"></i></span>
+                  Campaigns
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"><i class="fas fa-list"></i></span>
+                  Orders
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"
+                    ><i class="fas fa-ticket-alt"></i
+                  ></span>
+                  Vouchers
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span class="icon-space"
+                    ><i class="fas fa-clipboard-list"></i
+                  ></span>
+                  Departments
+                  <i class="fas fa-angle-right arrow-btn"></i>
+                </a>
+              </li>
+              <li>
+                <a href="" class="close-btn" onclick="closeFuntion()"
+                  >&times;</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-item-1">
+            <ul>
+              <li><a href="">All Shops</a></li>
+              <li><a href="">Gift Card</a></li>
+              <li><a href="">Campaign</a></li>
+              <li><a href="">Ivaly Express</a></li>
+            </ul>
+          </div>
+          <div class="nav-item-2">
+            <ul>
+              <li><a href="">News Feed</a></li>
+              <li><a href="">Mercent Zone</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-   </div>
- </div>
 
+    <section id="main-slider">
+      <div class="container">
+        <div class="slider">
+          <img
+            src="https://source.unsplash.com/random/700x700?technology"
+            alt="slider 1"
+          />
+          <img
+            src="https://source.unsplash.com/701x701?technology"
+            alt="slider 2"
+          />
+          <img
+            src="https://source.unsplash.com/703x703?technology"
+            alt="slider 3"
+          />
+        </div>
+      </div>
+    </section>
 
+    <section id="grocery">
+      <div class="container">
+        <div class="grocery-card">
+          <img src="./images/grocery/img-1.jpg" alt="" />
+          <img src="./images/grocery/img-2.png" alt="" />
+          <img src="./images/grocery/img-1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
 
- <script src="js/jquery-3.4.1.js"></script>
- <script src="js/main.js"></script>
-</body>
+    <section id="product">
+      <div class="container">
+        <!-- Tabs -->
+        <div class="tab-items">
+        
+          <a href="#" class="tab  active" data-toggle-target=".tab-content-1">Categories</a>
+          <a href="#" class="tab" data-toggle-target=".tab-content-2">Brands</a>
+          <a href="#" class="tab" data-toggle-target=".tab-content-3">Shops</a>
+          
+        </div>
+        <!-- Content -->
+        <div class="tab-content tab-content-1 active">
+          <h1>Tab Content Categoriesbvfcgcc</h1>
+        </div>
+        <div class="tab-content tab-content-2">
+          <h1>Tab Content Brands</h1>
+        </div>
+        <div class="tab-content tab-content-3">
+          <h1>Tab Content Shops</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <!-- Slick js -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

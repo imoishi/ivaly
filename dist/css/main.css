@@ -4,12 +4,15 @@
   margin: auto;
   overflow: hidden; }
 
+.current {
+  border-bottom: 2px #000 solid; }
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: 'Nunito Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', arial ,'Noto Sans', sans-serif;
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", arial, "Noto Sans", sans-serif;
   line-height: 1.6;
   background: #f5f6f7; }
 
@@ -85,22 +88,64 @@ ul {
     border-left: 1px #e6e8eb solid; }
     #main-nav .navber #main-box {
       font-size: 24px;
-      cursor: pointer; }
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      color: #5a6577; }
     #main-nav .navber .side-menu {
       position: fixed;
       top: 0px;
       left: 0px;
       height: 100%;
       width: 0px;
-      background: #222;
+      background: #fff;
+      border-right: 1px #e6e8eb solid;
       z-index: 1;
       padding-top: 100px;
       overflow-x: hidden; }
-      #main-nav .navber .side-menu a {
-        padding: 8px 8px 8px 64px;
-        font-size: 20px;
-        color: #999;
-        display: block; }
+      #main-nav .navber .side-menu .logo-img {
+        position: absolute;
+        top: 1.5rem;
+        left: 25px; }
+      #main-nav .navber .side-menu .balance {
+        border-top: 1px #e6e8eb solid; }
+        #main-nav .navber .side-menu .balance .border-all {
+          margin: 1rem;
+          border: 1px #e6e8eb solid;
+          border-radius: 5px; }
+          #main-nav .navber .side-menu .balance .border-all .balance-box {
+            text-align: center;
+            border-bottom: 1px #e6e8eb solid;
+            padding: 1rem; }
+          #main-nav .navber .side-menu .balance .border-all .log-in {
+            padding: 1rem;
+            text-align: center; }
+            #main-nav .navber .side-menu .balance .border-all .log-in .login-btn {
+              width: 100%;
+              padding: 10px 20px;
+              border: 1px #c3232a solid;
+              color: #c3232a;
+              background: #fff2f1;
+              border-radius: 5px;
+              cursor: pointer; }
+              #main-nav .navber .side-menu .balance .border-all .log-in .login-btn:focus {
+                outline: none;
+                border: 1px solid #c3232a; }
+      #main-nav .navber .side-menu li a {
+        padding: 0.75rem 1.5rem;
+        color: #000;
+        display: block;
+        align-items: center; }
+        #main-nav .navber .side-menu li a:hover {
+          background-color: #f5f6f7; }
+        #main-nav .navber .side-menu li a .icon-space {
+          margin-right: 0.75rem;
+          align-items: center; }
+        #main-nav .navber .side-menu li a .arrow-btn {
+          position: absolute;
+          right: 2rem;
+          align-items: center;
+          margin-top: 0.4rem; }
       #main-nav .navber .side-menu .close-btn {
         position: absolute;
         top: 0px;
@@ -135,5 +180,48 @@ ul {
             font-size: 0.95rem; }
             #main-nav .navber .nav-item-2 ul li a:hover {
               color: #d0d3d6; }
+
+.slider {
+  padding-top: 1rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 380px; }
+  .slider img {
+    height: 400px; }
+
+.slick-dots li button {
+  color: #fff !important; }
+
+.slick-dots li button:before {
+  font-size: 3rem !important;
+  color: #fff !important; }
+
+.slick-dots li button:after {
+  font-size: 3rem !important;
+  color: #fff !important; }
+
+#grocery {
+  margin: 2rem 0; }
+  #grocery .grocery-card {
+    display: flex;
+    justify-content: space-between; }
+
+.tab-content {
+  display: none; }
+
+.tab-content.active {
+  display: block; }
+
+.tab-items {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem; }
+  .tab-items a {
+    margin: 0 10rem;
+    color: #000;
+    align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

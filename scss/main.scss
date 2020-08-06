@@ -1,66 +1,65 @@
+@import "config";
+@import "utilities";
 
-@import 'config';
-@import 'utilities';
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Nunito Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', arial ,'Noto Sans', sans-serif;
+body {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", arial, "Noto Sans", sans-serif;
   line-height: 1.6;
   background: $background-color;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-h2, h3, h4{
+h2,
+h3,
+h4 {
   // text-transform: uppercase;
 }
 
-
-
-
 //header
-#header-home{
+#header-home {
   background: $white-color;
   border-bottom: 1px $seperator-color solid;
 
-  .big-header{
+  .big-header {
     display: grid;
     grid-template-columns: 1fr 7fr 2fr;
     padding: 0.5rem;
     align-items: center;
 
-    a{
+    a {
       // text-align: left;
       // align-items: center;
-      img{
+      img {
         // align-items: left;
         text-align: left;
         height: 40px;
       }
     }
 
-    .searchbar{
+    .searchbar {
       align-items: center;
       text-align: left;
       margin-left: 1rem;
-      .search-input{
+      .search-input {
         width: 85%;
         padding: 0 17px;
         height: 2.5rem;
         border: 2px $primary-color solid;
         border-radius: 5px 0 0 5px;
 
-        &::placeholder{
+        &::placeholder {
           color: $placeholder-color;
         }
 
@@ -68,43 +67,38 @@ h2, h3, h4{
           outline: none;
           border: 2px solid $primary-color;
         }
-
       }
 
-      
+      .search-icon {
+        background: $primary-color;
+        height: 2.5rem;
+        padding: 0 29px;
+        border: 2px $primary-color solid;
+        border-radius: 0 5px 5px 0;
+        margin-left: -6px;
+        color: $white-color;
+        cursor: pointer;
 
-      .search-icon{
-         background: $primary-color;
-         height: 2.5rem;
-         padding: 0 29px;
-         border: 2px $primary-color solid;
-         border-radius: 0 5px 5px 0;
-         margin-left: -6px;
-         color: $white-color;
-         cursor: pointer;
-
-         &:focus {
+        &:focus {
           outline: none;
           border: 2px solid $primary-color;
         }
 
-
-         .icon-bar{
+        .icon-bar {
           size: 1rem;
-          
-         }
+        }
       }
     }
-    .icon-item{
+    .icon-item {
       display: flex;
       justify-self: end;
 
-      .item{
-        padding:  0.75rem;
+      .item {
+        padding: 0.75rem;
         border: none;
         align-items: center;
 
-        .icons{
+        .icons {
           border: none;
           background: $white-color;
           color: $icon-color;
@@ -113,7 +107,7 @@ h2, h3, h4{
         }
       }
 
-      .separate{
+      .separate {
         padding: 1.1rem 0.4rem;
         color: $seperator-color;
       }
@@ -121,73 +115,136 @@ h2, h3, h4{
   }
 }
 
-
-
-
-#main-nav{
+#main-nav {
   background: $white-color;
 
-  .navber{
+  .navber {
     display: grid;
     grid-template-columns: 1fr 6fr 4fr;
     // padding: 0.3rem;
     align-items: center;
     border-left: 1px $seperator-color solid;
 
-    #main-box{
+    #main-box {
       font-size: 24px;
+      align-items: center;
+      text-align: center;
       cursor: pointer;
+      color: $dark-gray-color;
     }
 
-    .side-menu{
-     position: fixed;
-     top: 0px;
-     left: 0px;
-     height: 100%;
-     width: 0px;
-     background: #222;
-     z-index: 1;
-     padding-top: 100px;
-     overflow-x: hidden;
+    .side-menu {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 0px;
+      background: $white-color;
+      border-right: 1px $seperator-color solid;
+      z-index: 1;
+      padding-top: 100px;
+      overflow-x: hidden;
 
-     a{
-       padding: 8px 8px 8px 64px;
-       font-size: 20px;
-       color: #999;
-       display: block;
-     }
+      .logo-img {
+        position: absolute;
+        top: 1.5rem;
+        left: 25px;
+        //  margin-left: 32px;
+      }
 
-     .close-btn{
-       position: absolute;
-       top: 0px;
-       right: 25px;
-       font-size: 36px;
-       margin-left: 32px;
-     }
-      
+      .balance {
+        border-top: 1px $seperator-color solid;
+
+        .border-all {
+          margin: 1rem;
+          border: 1px $seperator-color solid;
+          border-radius: 5px;
+
+          .balance-box {
+            text-align: center;
+            border-bottom: 1px $seperator-color solid;
+            padding: 1rem;
+          }
+
+          .log-in {
+            padding: 1rem;
+            text-align: center;
+            //  width: 100%;
+
+            .login-btn {
+              width: 100%;
+              padding: 10px 20px;
+              border: 1px $primary-color solid;
+              color: $primary-color;
+              background: $primary-light-color;
+              border-radius: 5px;
+              cursor: pointer;
+
+              &:focus {
+                outline: none;
+                border: 1px solid $primary-color;
+              }
+            }
+          }
+        }
+      }
+
+      li {
+        a {
+          //  font-size: 20px;
+          // position: absolute;
+          padding: 0.75rem 1.5rem;
+          color: $dark-color;
+          display: block;
+          align-items: center;
+
+          &:hover {
+            background-color: $background-color;
+          }
+
+          .icon-space {
+            margin-right: 0.75rem;
+            align-items: center;
+          }
+
+          .arrow-btn {
+            position: absolute;
+            right: 2rem;
+            align-items: center;
+            margin-top: 0.4rem;
+          }
+        }
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 32px;
+      }
     }
 
-
-    .nav-item-1{
+    .nav-item-1 {
       border-left: 1px $seperator-color solid;
-      ul{
+      ul {
         display: flex;
         justify-self: left;
 
-        :first-child{
+        :first-child {
           margin-left: 1rem;
         }
 
-        li{
-          padding:  0.75rem 1.3rem;
+        li {
+          padding: 0.75rem 1.3rem;
           // margin-left: 0.5rem;
           // font-weight: bold;
 
-          a{
+          a {
             color: $dark-gray-color;
             font-size: 0.95rem;
 
-            &:hover{
+            &:hover {
               color: $placeholder-color;
             }
           }
@@ -195,25 +252,25 @@ h2, h3, h4{
       }
     }
 
-    .nav-item-2{
+    .nav-item-2 {
       border-left: 1px $seperator-color solid;
-      ul{
+      ul {
         display: flex;
         justify-self: end;
 
-        :first-child{
+        :first-child {
           margin-left: 1rem;
         }
 
-        li{
+        li {
           padding: 0.75rem 1.4rem;
           // font-weight: bold;
 
-          a{
+          a {
             color: $dark-gray-color;
             font-size: 0.95rem;
 
-            &:hover{
+            &:hover {
               color: $placeholder-color;
             }
           }
@@ -223,15 +280,77 @@ h2, h3, h4{
   }
 }
 
+.slider {
+  padding-top: 1rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 380px;
+
+  img {
+    height: 400px;
+  }
+}
+
+.slick-dots li button {
+  color: #fff !important;
+}
+.slick-dots li button:before {
+  font-size: 3rem !important;
+  color: #fff !important;
+}
+.slick-dots li button:after {
+  font-size: 3rem !important;
+  color: #fff !important;
+}
 
 // text-align: center;
 // align-items: center;
 // font-size: 1.5rem;
 
-// a{
-//   color: $dark-gray-color;
-// }
-
 // .active {
 //   width: 300px;
 // }
+
+#grocery {
+  margin: 2rem 0;
+
+  .grocery-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// Jquery Tabs
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+  // border-bottom: 1px red solid;
+}
+
+.tab-items {
+  display: flex;
+  justify-content: space-between;
+  background: $white-color;
+  border-radius: 8px;
+  // padding-top: 0.5;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  
+
+  a{
+    // text-align: center;
+    // padding: 0.5rem 0;
+    // padding-top: 1rem;
+    margin:  0 10rem;
+    color: $dark-color;
+    align-items: center;
+    // font-size: 1rem;
+    
+
+    // .{
+    //   border-bottom: 1px #000 solid;
+    // }
+  }
+}
