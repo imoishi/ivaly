@@ -224,4 +224,22 @@ ul {
     color: #000;
     align-items: center; }
 
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+  .categories .product-card {
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer; }
+    .categories .product-card .product-img {
+      padding: 1rem;
+      height: 114px;
+      width: 114px; }
+    .categories .product-card .product-name {
+      padding: 12px 0;
+      text-align: center;
+      font-size: 1rem; }
+
 /*# sourceMappingURL=main.css.map */
