@@ -218,7 +218,7 @@ ul {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   .tab-items a {
     margin: 0 10rem;
     color: #000;
@@ -228,6 +228,8 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem; }
+  .categories a {
+    color: #000; }
   .categories .product-card {
     background: #fff;
     padding: 8px;
@@ -238,6 +240,54 @@ ul {
       height: 114px;
       width: 114px; }
     .categories .product-card .product-name {
+      padding: 12px 0;
+      text-align: center;
+      font-size: 1rem; }
+
+.search-bar {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem; }
+  .search-bar .search-input {
+    background: #fff;
+    padding: 0 17px;
+    height: 2.7rem;
+    width: 19%;
+    border: 1px #e6e8eb solid;
+    border-radius: 8px 0 0 8px; }
+    .search-bar .search-input::placeholder {
+      color: #d0d3d6; }
+    .search-bar .search-input:focus {
+      outline: none; }
+  .search-bar .search-icon {
+    padding: 0 29px;
+    height: 2.6rem;
+    background: #2E373F;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    cursor: pointer; }
+    .search-bar .search-icon:focus {
+      outline: none; }
+
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+  .brands a {
+    color: #000; }
+  .brands .brand-card {
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px; }
+    .brands .brand-card .brand-img {
+      padding: 2rem;
+      height: 78px;
+      width: 78px;
+      border: 2px #ECF3F9 solid;
+      border-radius: 8px; }
+    .brands .brand-card .brand-name {
       padding: 12px 0;
       text-align: center;
       font-size: 1rem; }
