@@ -115,6 +115,9 @@ h4 {
   }
 }
 
+
+
+//navber
 #main-nav {
   background: $white-color;
 
@@ -125,6 +128,8 @@ h4 {
     align-items: center;
     border-left: 1px $seperator-color solid;
 
+
+    //side navber
     #main-box {
       font-size: 24px;
       align-items: center;
@@ -225,6 +230,8 @@ h4 {
       }
     }
 
+
+    //outside navber
     .nav-item-1 {
       border-left: 1px $seperator-color solid;
       ul {
@@ -280,6 +287,8 @@ h4 {
   }
 }
 
+
+//slider
 .slider {
   padding-top: 1rem;
   margin-bottom: 5rem;
@@ -311,6 +320,7 @@ h4 {
 //   width: 300px;
 // }
 
+//grocery card
 #grocery {
   margin: 2rem 0;
 
@@ -319,6 +329,9 @@ h4 {
     justify-content: space-between;
   }
 }
+
+
+
 
 // Jquery Tabs
 .tab-content {
@@ -338,6 +351,7 @@ h4 {
   // padding-top: 0.5;
   padding: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0px 1px 4px 1px $seperator-color;
   
 
   a{
@@ -349,7 +363,7 @@ h4 {
   }
 }
 
-
+//categorires
 .categories{
   display: flex;
   justify-content: space-between;
@@ -364,6 +378,7 @@ h4 {
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0px 1px 4px 1px $seperator-color;
 
     .product-img{
       padding: 1rem;
@@ -437,6 +452,7 @@ h4 {
     background: $white-color;
     padding: 8px;
     border-radius: 8px;
+    box-shadow: 0px 1px 4px 1px $seperator-color;
 
     .brand-img{
       padding: 2rem;
@@ -457,4 +473,123 @@ h4 {
 
 //shop
 
+.shops{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 
+  a{
+    color: $dark-color;
+  }
+
+  .shop-card{
+    background: $white-color;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 1px $seperator-color;
+
+    .shop-img{
+      padding: 2rem;
+      height: 75px;
+      width: 78px;
+      border-bottom: 2px #ECF3F9 solid;
+    }
+
+    .shop-name{
+      padding: 12px 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+  }
+}
+
+
+//footer
+#main-footer{
+  background: #333E4F;
+  margin-top: 2rem;
+
+  .big-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 4rem 0 0 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px #2c343d solid;
+
+    h3{
+      color: #9CA9BE;
+      padding-bottom: 1rem;
+    }
+
+    .download{
+      text-align: left;
+
+      .box-1{
+        padding-top: 0.5rem;
+        img{
+        width: 130px;
+        height: 35px;
+        }
+      }
+
+      .box-2{
+        img{
+        width: 130px;
+        height: 40px;
+        }
+      }
+    }
+
+    .menu{
+      text-align: left;
+
+      ul{
+        // padding-top: 1rem;
+
+        li{
+          line-height: 1.8rem;
+
+          a{
+            color: #9CA9BE;
+          }
+        }
+      }
+    }
+
+    .contact{
+      text-align: left;
+      color: #9CA9BE;
+      line-height: 1.8rem;
+    }
+
+    .get-in{
+      text-align: right;
+      color: #9CA9BE;
+
+      h3{
+        margin-right: 3.2rem;
+      }
+
+      .footer-icon{
+        background: #2c343d;
+        margin-right: 12px;
+        padding: 12px;
+        border-radius: 5px;
+
+        &:hover {
+          background: #40A9FF;
+          color: $white-color;
+        }
+      }
+      
+    }
+  }
+
+  .footer{
+    text-align: center;
+    padding: 1.2rem;
+    color: #9CA9BE;
+  }
+}

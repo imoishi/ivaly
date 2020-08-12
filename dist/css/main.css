@@ -218,7 +218,8 @@ ul {
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  box-shadow: 0px 1px 4px 1px #e6e8eb; }
   .tab-items a {
     margin: 0 10rem;
     color: #000;
@@ -234,7 +235,8 @@ ul {
     background: #fff;
     padding: 8px;
     border-radius: 8px;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 0px 1px 4px 1px #e6e8eb; }
     .categories .product-card .product-img {
       padding: 1rem;
       height: 114px;
@@ -280,7 +282,8 @@ ul {
   .brands .brand-card {
     background: #fff;
     padding: 8px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 1px #e6e8eb; }
     .brands .brand-card .brand-img {
       padding: 2rem;
       height: 78px;
@@ -291,5 +294,77 @@ ul {
       padding: 12px 0;
       text-align: center;
       font-size: 1rem; }
+
+.shops {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem; }
+  .shops a {
+    color: #000; }
+  .shops .shop-card {
+    background: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 1px #e6e8eb; }
+    .shops .shop-card .shop-img {
+      padding: 2rem;
+      height: 75px;
+      width: 78px;
+      border-bottom: 2px #ECF3F9 solid; }
+    .shops .shop-card .shop-name {
+      padding: 12px 0;
+      text-align: center;
+      font-size: 1.1rem; }
+
+#main-footer {
+  background: #333E4F;
+  margin-top: 2rem; }
+  #main-footer .big-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: 4rem 0 0 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px #2c343d solid; }
+    #main-footer .big-footer h3 {
+      color: #9CA9BE;
+      padding-bottom: 1rem; }
+    #main-footer .big-footer .download {
+      text-align: left; }
+      #main-footer .big-footer .download .box-1 {
+        padding-top: 0.5rem; }
+        #main-footer .big-footer .download .box-1 img {
+          width: 130px;
+          height: 35px; }
+      #main-footer .big-footer .download .box-2 img {
+        width: 130px;
+        height: 40px; }
+    #main-footer .big-footer .menu {
+      text-align: left; }
+      #main-footer .big-footer .menu ul li {
+        line-height: 1.8rem; }
+        #main-footer .big-footer .menu ul li a {
+          color: #9CA9BE; }
+    #main-footer .big-footer .contact {
+      text-align: left;
+      color: #9CA9BE;
+      line-height: 1.8rem; }
+    #main-footer .big-footer .get-in {
+      text-align: right;
+      color: #9CA9BE; }
+      #main-footer .big-footer .get-in h3 {
+        margin-right: 3.2rem; }
+      #main-footer .big-footer .get-in .footer-icon {
+        background: #2c343d;
+        margin-right: 12px;
+        padding: 12px;
+        border-radius: 5px; }
+        #main-footer .big-footer .get-in .footer-icon:hover {
+          background: #40A9FF;
+          color: #fff; }
+  #main-footer .footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: #9CA9BE; }
 
 /*# sourceMappingURL=main.css.map */
