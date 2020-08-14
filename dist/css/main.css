@@ -316,6 +316,65 @@ ul {
       text-align: center;
       font-size: 1.1rem; }
 
+#single-page {
+  margin-top: 1rem; }
+  #single-page .all-details {
+    background: #fff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 2rem; }
+    #single-page .all-details .single-product {
+      margin: 2rem;
+      padding-left: 4rem; }
+      #single-page .all-details .single-product img {
+        width: 350px;
+        height: 350px; }
+    #single-page .all-details .product-details {
+      padding: 1rem 2rem 0 0; }
+      #single-page .all-details .product-details p {
+        color: #757575;
+        line-height: 1.7rem; }
+      #single-page .all-details .product-details a {
+        color: #c3232a; }
+      #single-page .all-details .product-details .product-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem; }
+      #single-page .all-details .product-details .price {
+        border-top: 1px #e6e8eb solid;
+        border-bottom: 1px #e6e8eb solid;
+        margin-top: 0.75rem; }
+        #single-page .all-details .product-details .price h3 {
+          margin-top: 1rem; }
+        #single-page .all-details .product-details .price .cart-check {
+          padding-top: 1rem;
+          margin-bottom: 1rem;
+          text-align: center; }
+          #single-page .all-details .product-details .price .cart-check .cart-btn {
+            width: 100%;
+            background: #c3232a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem; }
+            #single-page .all-details .product-details .price .cart-check .cart-btn i {
+              font-size: 1.1rem;
+              margin-right: 0.57rem; }
+            #single-page .all-details .product-details .price .cart-check .cart-btn:focus {
+              outline: none; }
+      #single-page .all-details .product-details .question {
+        padding: 1rem 0;
+        border-bottom: 1px #e6e8eb solid;
+        margin-bottom: 1rem; }
+        #single-page .all-details .product-details .question h3 {
+          color: #E53E3E; }
+          #single-page .all-details .product-details .question h3 i {
+            padding-right: 0.5rem; }
+
 #main-footer {
   background: #333E4F;
   margin-top: 2rem; }
